@@ -96,10 +96,8 @@ Manage all your protection rules from a single place:
 
 - Toggle Fight Mode and Anonymizer Blocking on/off
 - Add/remove blocked countries, IPs, ASNs, and user agents
-- Monitor verification activity in real time
-- Manage multiple projects under one account
 
-→ [dashboard.sharkeyes.dev](https://sharkeyes.dev)
+→ [sharkeyes.dev/dashboard](https://sharkeyes.dev/dashboard)
 
 ---
 
