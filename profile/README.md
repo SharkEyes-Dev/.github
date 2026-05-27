@@ -129,8 +129,8 @@ SharkEyes is built with privacy as a core principle:
 ## Links
 
 - [Website](https://sharkeyes.dev)
-- [Documentation](https://sharkeyes.dev/docs)
-- [Developers](https://sharkeyes.dev/developers)
+- [Documentation](https://docs.sharkeyes.dev/)
+- [Developers](https://developers.sharkeyes.dev/)
 - [Pricing](https://sharkeyes.dev/price)
 - [Blog](https://sharkeyes.dev/blog)
 
