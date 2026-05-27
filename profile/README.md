@@ -8,7 +8,7 @@
 Stop bots before they reach your forms — silently, accurately, and without friction.
 
 [![Website](https://img.shields.io/badge/sharkeyes.dev-7c3aed?style=flat-square&logo=globe&logoColor=white)](https://sharkeyes.dev)
-[![npm](https://img.shields.io/npm/v/sharkeyes?style=flat-square&color=7c3aed)](https://www.npmjs.com/package/sharkeyes)
+[![npm](https://img.shields.io/npm/v/sharkeyes?style=flat-square&color=7c3aed)](https://www.npmjs.com/package/sharkeyes_lib_js)
 [![PyPI](https://img.shields.io/pypi/v/sharkeyes?style=flat-square&color=7c3aed)](https://pypi.org/project/sharkeyes_lib)
 [![License](https://img.shields.io/badge/license-MIT-7c3aed?style=flat-square)](LICENSE)
 
