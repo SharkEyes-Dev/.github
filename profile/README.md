@@ -61,27 +61,31 @@ if (!result.allowed) {
 ### Python
 
 ```bash
-pip install sharkeyes
+pip install sharkeyes-lib
 ```
 
 ```python
-from sharkeyes import SharkEyes
 
-se = SharkEyes(api_key="YOUR_API_KEY")
+from sharkeyes_lib import configure, verify
 
-result = se.verify(request)
+configure(api_key="your_secret_key")
 
-if not result.allowed:
-    return {"error": "Bot detected"}, 403
+ok, error = verify(request.form.get("sharkeyes_token", ""), request)
+if not ok:
+    return "CAPTCHA failed", 400
+
 ```
 
 ### REST API
-
 ```bash
-curl -X POST https://api.sharkeyes.dev/v1/verify \
-  -H "Authorization: Bearer YOUR_API_KEY" \
-  -H "Content-Type: application/json" \
-  -d '{"ip": "1.2.3.4", "user_agent": "Mozilla/5.0..."}'
+curl -X POST "https://api.sharkeyes.dev/api/v2/server-verify" \
+     -H "Content-Type: application/json" \
+     -H "X-Api-Key: your_api_key" \
+     --max-time 5 \
+     -d '{
+       "verification_token": "YOUR_TOKEN_HERE",
+       "user_ip": "1.2.3.4"
+     }'
 ```
 
 ---
@@ -113,10 +117,10 @@ SharkEyes is built with privacy as a core principle:
 
 ## Pricing
 
-| Plan | Price | Requests |
-|------|-------|----------|
-| Free | $0/mo | Limited |
-| Pro  | $9/mo | Unlimited |
+| Plan | Price | Features |
+| :---: | :---: | :---: |
+| Free | $0/mo | Basic features |
+| Pro | $9/mo | All Free features + more |
 
 → [View full pricing](https://sharkeyes.dev/price)
 
