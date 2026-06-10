@@ -83,9 +83,8 @@ curl -X POST "https://api.sharkeyes.dev/api/v2/server-verify" \
      -H "X-Api-Key: your_api_key" \
      --max-time 5 \
      -d '{
-       "verification_token": "YOUR_TOKEN_HERE",
-       "user_ip": "1.2.3.4"
-     }'
+       "verification_token": "YOUR_TOKEN_HERE"
+      }'
 ```
 
 ---
