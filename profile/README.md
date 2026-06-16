@@ -70,7 +70,7 @@ from sharkeyes_lib import configure, verify
 
 configure(api_key="your_secret_key")
 
-ok, error = verify(request.form.get("sharkeyes_token", ""), request)
+ok, error = verify(request.form.get("sharkeyes_token", ""))
 if not ok:
     return "CAPTCHA failed", 400
 
